@@ -26,7 +26,6 @@ export function calculateDiscount(price, discountCode) {
   return price - price * discount;
 }
 
-// Exercise: Positive and negative testing
 export function validateUserInput(username, age) {
   let errors = [];
 
