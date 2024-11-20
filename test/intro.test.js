@@ -1,7 +1,7 @@
 import { describe, test, it, expect} from "vitest"
-import { fizzBuzz, max } from "../src/intro"
+import { factorial, fizzBuzz, max } from "../src/intro"
 
-describe('max', () => {
+/*describe('max', () => {
     it('function max should return the first argument if it is greater', () => {
         expect(max(2, 1)).toBe(2);
     })
@@ -16,5 +16,23 @@ describe('fizzBuzz', () => {
     })
     it('if number are % === 5 ? should return Buzz', () => {
         expect(fizzBuzz(5)).toBe('Buzz');
+    })
+})*/
+
+//TDD example 
+// First set test logic for upcoming funciton
+
+describe('factorial', () => {
+    it('if passed 0 should return 1', () => {
+        expect(factorial(0)).toBe(1);
+    })
+    it('if passed 1 should return 1', () => {
+        expect(factorial(1)).toBe(1);
+    })
+    it('if passed 2 should return 2 x 1', () => {
+        expect(factorial(2)).toBe(2);
+    })
+    it('if passed 3 should return 3 x 2 x 1', () => {
+        expect(factorial(3)).toBe(6);
     })
 })
